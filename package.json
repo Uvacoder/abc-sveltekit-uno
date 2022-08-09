@@ -1,0 +1,49 @@
+{
+	"name": "sveltekit-uno",
+	"version": "0.0.1",
+	"author": "sozonome",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"release": "standard-version",
+		"up": "yarn upgrade-interactive",
+		"up-latest": "yarn up --latest",
+		"up-next": "yarn up --next",
+		"push-release": "git push --follow-tags origin main",
+		"prepare": "husky install"
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^16.0.0",
+		"@iconify-json/twemoji": "^1.0.2",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@typescript-eslint/eslint-plugin": "^4.31.1",
+		"@typescript-eslint/parser": "^4.31.1",
+		"commitlint": "^16.0.1",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^3.3.0",
+		"lint-staged": "^12.1.7",
+		"prettier": "^2.4.1",
+		"prettier-plugin-svelte": "^2.4.0",
+		"standard-version": "^9.3.2",
+		"svelte": "^3.45.0",
+		"svelte-check": "^2.2.6",
+		"svelte-preprocess": "^4.9.4",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.3",
+		"unocss": "^0.20.4",
+		"husky": "^7.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fontsource/outfit": "^4.5.1",
+		"svelte-meta-tags": "^2.2.2"
+	}
+}
